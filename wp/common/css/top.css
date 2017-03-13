@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* ----------------------------
+* top header
+* -------------------------- */
+.mv_text{
+    top: 0px;
+    position: absolute;
+}
+
+
+
+.top_img {
+/*    background-image: url(/wordpress/wp-content/themes/museum/common/img/header/header_top.png);*/
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -12px;
+/*    height: 675px;*/
+}
+@media (max-width: 768px){
+    .top_img{
+/*        background-image: url(/wordpress/wp-content/themes/museum/common/img/header/header_top_sp.png);*/
+        background-size: cover;
+        margin-top: -30px;
+    }
+}
+.slide_img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    height: 675px;
+}
+@media (max-width: 768px){
+    .slide_img{
+        background-size: cover;
+        margin-top: 0;
+    }
+}
+.top_img .h1_title{
+    top: 217px;
+    font-size: 5.4rem;
+    line-height: 1.6;
+    padding: 0;
+}
+@media (max-width: 768px){
+    .top_img .h1_title{
+        top: 330px;
+        font-size: 4rem;
+        text-align: initial;
+        padding: 0;
+    }
+    .top_img .h1_title img{
+        width: 228px;
+    }
+}
+.sub_title{
+    top: 250px;
+    padding: 0;
+}
+@media (max-width: 768px){
+    .sub_title{
+        top: 380px;
+        padding: 0;
+    }
+    .top_img .sub_title img{
+        width: 268px;
+/*        width: 100%;*/
+    }
+}
+/* ------------
+* *time and pay
+* ----------- */
+
+.main_container .time_pay {
+    background-color: #221815;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 151px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .main_container .time_pay {
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .main_container .time_pay>div {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+.time_pay {
+    text-align: center;
+    
+}
+
+.time_title,
+.pay_title {
+    background-color: #776957;
+    width: 119px;
+    height: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.time_title{
+    margin-left: 8px;
+}
+@media (max-width:768px) {
+    .time_title{
+        margin-left: 0;
+    }
+}
+.time_title img,
+.pay_title img{
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+
+@media(max-width:767px) {
+    .time_title,
+    .pay_title {
+        width: inherit;
+        height: inherit;
+        padding: 20px;
+        font-size: 3.4rem;
+    }
+    .time_title img{
+        margin: 0 auto;
+        width: 96px;
+        margin-left: -7%;
+    }
+    .pay_title img{
+        margin: 0 auto;
+        width: 79px;
+        margin-left: -7%;
+    }
+}
+
+.time_text,
+.pay_text{
+    font-size: 2rem;
+}
+.time_text img,
+.pay_text img{
+    margin: 0 auto;
+    margin-left: -36px;
+}
+@media (max-width:768px) {
+    .time_text img,
+    .pay_text img{
+        margin-left: inherit;
+        margin: 0 auto;
+    }
+}
+@media (max-width:600px) {
+    .time_text img{
+        width: 70%;
+    }
+    .pay_text img{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+.w40p{
+    width: 40%;
+}
+@media (max-width:768px) {
+    .w40p{
+        width: inherit;
+    }
+}
+.pay_text span{
+    font-size: 1.2rem;
+}
+
+/* ----------------------------
+* item_box>div
+* -------------------------- */
+
+@media (max-width:768px) {
+    main .item_box>div:nth-child(even) {
+        float: right;
+    }
+    main .item_box>div:last-child {
+         margin-right: inherit; 
+    }
+}
+/* ----------------------------
+* slide css
+* -------------------------- */
+#slide {
+    width:100%;
+    height:675px;
+    margin:0 auto;
+    position:relative;
+    margin-top: -30px;
+}
+#slide img {
+    position:absolute;
+    left:0;
+    top:0;
+}

@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* ----------------------------
+* header top
+* -------------------------- */
+.exhibits_bg {
+    background-image: url(/wordpress/wp-content/themes/museum/common/img/header/exhibits_bg.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -30px;
+    height: 675px;
+    position: relative;
+}
+@media (max-width:768px) {
+    .exhibits_bg {
+        background-image: url(/wordpress/wp-content/themes/museum/common/img/header/exhibits_bg_sp.png);
+        height: 230px;
+    }
+}
+@media (min-width:768px) {
+    .h2_title {
+        margin-bottom: 40px;
+    }
+}
+/* ----------------------------
+* main
+* -------------------------- */
+@media (min-width:768px) {
+    main {
+        margin: 40px auto 80px;
+    }
+}
+@media (max-width:768px) {
+    main {
+        margin: 5px auto 28px;
+    }
+}
+main .main_container .item_box {
+    margin-top: 20px;
+    color: #fff;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    float: left;
+    width: 100%;
+}
+@media (min-width:768px) {
+    main .main_container .item_box {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    #exhibits .h1_title {
+        position: relative;
+    }
+    #exhibits .h1_title img {
+        margin: 0 auto;
+        width: 118px;
+    }
+    .h2_title img {
+        margin: auto;
+        width: 147px;
+    }
+}
+77
+/* ----------------------------
+* gallery
+* -------------------------- */
+.gallery{
+    margin: 40px 0 40px;
+}
+.gallery img{
+    margin: 0 auto;
+}
+@media (max-width:768px) {
+    .gallery{
+        margin: 20px 0;
+    }
+}
+/* ----------------------------
+* modal
+* -------------------------- */
+.modal_title{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.modal-dialog{
+    position: fixed;
+    top: calc(50% - 300px);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 802px;
+}
+@media (min-width:768px) {
+    .modal_target{
+        padding: 0;
+        width: 300px;
+    }
+    .modal_target:not(:nth-child(3)){
+        margin-right: 44px;
+    }
+    .modal_target:last-child{
+        margin-right: 0px;
+    }
+}
+@media (max-width:768px) {
+    .item-collection img {
+        width: 300px;
+        height: 225px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width:400px) {
+    .item-collection img {
+        width: 260px;
+        height: 195px;
+    }
+}
+}
+.modal-content {
+    border-radius:0;
+    width: 802px;
+}
+.modal-body{
+    padding: 0;
+    width: 800px;
+    height: 600px;
+}
+.modal-footer {
+    padding: 22px 10px;
+    text-align: right;
+    border-top: 1px solid #fff;
+}
+.close {
+    float: none;
+    position: absolute;
+    top: -32px;
+    right: 5px;
+    color: #fff;
+    opacity: inherit;
+    text-shadow: inherit;
+    line-height: 0;
+    font-weight: 100;
+    font-size: 4.4rem;
+}
+.arrow_left{
+    position: absolute;
+    top: 280px;
+    left: -1px;
+    cursor: pointer;
+}
+.arrow_right{
+    position: absolute;
+    top: 280px;
+    right: 0;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .modal-backdrop{
+        display: none;
+    }
+}

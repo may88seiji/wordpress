@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* ----------------------------
+* header top
+* -------------------------- */
+.access_bg {
+    background-image: url(/wordpress/wp-content/themes/museum/common/img/header/access_bg.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -30px;
+    height: 675px;
+    position: relative;
+}
+@media (max-width:768px) {
+    .access_bg {
+        background-image: url(/wordpress/wp-content/themes/museum/common/img/header/access_bg_sp.png);
+        height: 230px;
+    }
+}
+/* ----------------------------
+* h1 
+* -------------------------- */
+@media (max-width:768px) {
+    .h1_title {
+        position: relative;
+    }
+    .h1_title img {
+        margin: auto;
+        width: 96.5px;
+    }
+}
+
+/* ----------------------------
+* access_itembox
+* -------------------------- */
+.access_itembox>div img{
+    width: 100%;
+    margin: 0 auto;
+}
+.access_itembox>div{
+    text-align: center;
+    margin-bottom: 80px;
+}
+@media (min-width:768px) {
+    .access_itembox>div{
+        padding: 0;
+/*        width: 428px;*/
+    }
+    .left >div{
+        width: 428px;
+        float: right;
+        margin-right: 20px;
+    }
+    .right >div{
+        width: 428px;
+        float: left;
+        margin-left: 20px;
+    }
+    .access_itembox div img{
+        width: 428px;
+    }
+}
+
+@media (max-width:768px) {
+    .access_itembox>div{
+        margin-bottom: 0px;
+        padding: 0;
+    }
+}
+
+.access_itembox>div p{
+    font-size: 1.8rem;
+}
+
+@media (max-width:768px) {
+    .access_itembox>div p{
+        margin-top: 20px;
+    }
+}
+
+.access_itembox>div p img{
+    margin: 0 auto 20px;
+    width: inherit;
+}
+@media (max-width:768px) {
+    /* 公共交通機関をご利用の方 */
+    .access_itembox>div p img{
+        margin: 0 auto 20px;
+        width: 70%;
+        
+    }
+    /* お車をご利用の方 */
+    .row.access_itembox >.col-xs-12.col-sm-6+.col-xs-12.col-sm-6 p img{
+        width: 50%;
+    }
+}
+
+
+/* ----------------------------
+* googlemap
+* -------------------------- */
+.gm-style .place-card-large {
+    visibility: hidden !important;
+}
+@media (max-width:768px) {
+    .googlemap{
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+}
+
+.googlemap >div {
+    padding: 0;
+}

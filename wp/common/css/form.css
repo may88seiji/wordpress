@@ -1,0 +1,514 @@
+@charset "utf-8";
+
+label:hover{
+    cursor: pointer;
+}
+
+/* ----------------------------
+* step
+* -------------------------- */
+.step{
+    position: relative;
+}
+.text_input,.text_confirm,.text_finish{
+    position: absolute;
+    font-size: 2rem;
+}
+.text_input{
+    left: 67px;
+    top: 30px;
+}
+.text_confirm{
+    left: 500px;
+    top: 30px;
+}
+.text_finish{
+    left: 802px;
+    top: 30px;
+}
+.color_white{
+    color: #fff;
+}
+
+
+/* ----------------------------
+* text
+* -------------------------- */
+.text P{
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.finish .text P{
+    margin-top: 30px;
+}
+
+/* ----------------------------
+* table
+* -------------------------- */
+.table-bordered > tbody > tr > th{
+    vertical-align: middle;
+}
+@media (min-width:768px) {
+    .table tbody th{
+        width: 300px;
+        height: 70px;
+    }
+    .table-bordered > tbody > tr > td{
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width:768px) {
+    .table th,.table td{
+        display: block;
+        width: 100%;
+    }
+    .table{
+         max-width: inherit; 
+    }
+    .text p{
+/*        width: 94%;*/
+        margin-top: 20px;
+    }
+    
+    tbody{
+        width: 100%;
+    }
+
+    form,tr,th,td,input,textarea,.mw_wp_form ,.mw_wp_form_input  {
+        width: 100%;
+    }
+    .col-xs-12{
+        padding: 0;
+    }
+    
+/*
+    .table-bordered > tbody > tr > td{
+        padding: 0px;
+    }
+*/
+}
+/*borderの重なり解除*/
+@media (max-width:768px) {
+    .table-bordered > tbody > tr > td{
+        border-top: inherit;
+        border-bottom: inherit;
+/*        padding-bottom: 30px;*/
+    }
+    .table-bordered > tbody > tr > td.td_memo{
+        border-bottom: 1px solid #7e6d57;
+    }
+}
+/* ----------------------------
+* btn
+* -------------------------- */
+.wrap_btn{
+    text-align: center;
+}
+.btn_input{
+    width: 260px;
+    height: 60px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #b47551;
+    border-color: #b47551;
+    border-style: inherit;
+    box-shadow: inherit;
+}
+.btn_input:hover,.btn_back:hover{
+    opacity: 0.8;
+}
+.btn_back{
+    width: 260px;
+    height: 60px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #c8c8c8;
+    border-color: #c8c8c8;
+    border-style: inherit;
+    box-shadow: inherit;
+    margin: 0 30px;
+}
+
+@media (max-width:768px) {
+    .btn_input,.btn_back{
+        width:  42%;
+        margin: 0 10px;
+    }
+    /*入力画面*/
+    .input .btn_input{
+        width:  100%;
+        margin: inherit;
+    }
+}
+/* ----------------------------
+* confirm
+* -------------------------- */
+@media (min-width: 768px){
+    .confirm .table-bordered > tbody > tr > td {
+        padding: 10px 24px;
+        vertical-align: middle;
+    }
+}
+
+/* ----------------------------
+* finish
+* -------------------------- */
+.main p{
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 50px;
+}
+@media (max-width:768px) {
+    .main p{
+        font-size: 1.8rem;
+    }
+    .sub p{
+        font-size: 1.2rem;
+    }
+}
+.sub{
+    text-align: center
+}
+.btn_home{
+    text-align: center;
+    margin: 0 auto;
+}
+@media (max-width:768px) {
+    .btn_home .btn_input{
+        margin: inherit;
+        width: 97%;
+        margin-top: 30px;
+    }
+}
+/* ----------------------------
+* form 
+* -------------------------- */
+.table input{
+    border: transparent;
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    width: 100%;
+    height: 45px;
+}
+.table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td{
+    padding: 15px 20px 15px 20px;
+}
+
+.memo{
+    width: 100%;
+}
+input:hover,select:hover{
+    cursor: pointer;
+}
+/* ----------------------------
+* 来館日時
+* -------------------------- */
+@media (min-width:768px) {
+    .input_date input{
+        width: 100px;
+    }
+    input.year{
+        margin-right: 15px;
+    }
+    input.month{
+        margin: 0 15px;
+    }
+    input.day{
+        margin: 0 15px;
+    }
+    input.time_select{
+        margin: 0 15px;
+    }
+}
+@media (max-width:768px) {
+    .input_date input{
+        width: 80%;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}
+.year+span,.month+span,.day+span{
+    display: none !important;
+}
+
+/* ----------------------------
+* select
+* -------------------------- */
+.mw_wp_form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select {
+    width: 100px;
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid transparent;
+    background: #f7f7f7;
+    background-size: 20px, 100%;
+    border-radius: 0;
+    position: relative;
+    /* select */
+    background: url(/wordpress/wp-content/themes/museum/common/img/form/select.png) left bottom;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-color: #f7f7f7;
+}
+@media (max-width:768px) {
+    select{
+        width: 80%;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        background-position: 95%;
+    }
+}
+
+select.year{
+    margin-left: inherit;
+}
+/* ----------------------------
+* 人数
+* -------------------------- */
+input.number_person{
+    width: 100px;
+    margin-right: 15px;
+}
+@media (max-width:768px) {
+    input.number_person{
+        width: 80%;
+    }
+}
+
+/* ----------------------------
+* 来館手段
+* -------------------------- */
+input.l_bus,input.s_bus,input.micro_bus,input.other{
+    width: 100px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+input.l_bus,input.s_bus{
+    margin-left: 110px;
+}
+input.micro_bus{
+    margin-left: 78px;
+}
+input.other{
+    margin-left: 127px;
+    margin-bottom: inherit;
+}
+@media (max-width:768px) {
+    input.l_bus,input.s_bus,input.micro_bus,input.other{
+        width:30%;
+    }
+    input.l_bus,input.s_bus{
+        margin-left: 50px;
+    }
+    input.micro_bus{
+        margin-left: 19px;
+    }
+    input.other{
+        margin-left: 68px;
+    }
+}
+/* ----------------------------
+* 買物のご希望
+* -------------------------- */
+th {
+    white-space: nowrap;
+}
+.table input.request {
+    width: inherit;
+    height: inherit;
+    margin: inherit;
+}
+.table-bordered > tbody .request_shop{
+    vertical-align: middle;
+}
+.request_shop .mwform-radio-field-text{
+    margin-left: 15px;
+}
+.mwform-radio-field{
+    margin-right: 80px;
+}
+@media (max-width:768px) {
+    .mwform-radio-field{
+        margin-right: inherit;
+    }
+}
+.request{
+    display:none;
+}
+.mwform-radio-field label{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: #3e4956;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
+}
+.mwform-radio-field label:before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: -10px;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+    border: 2px solid #dedfe0;
+    border-radius: 50%;
+    }
+.mwform-radio-field input[type="radio"]:checked + span:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background: #96846e;
+}
+
+
+/* ----------------------------
+* メモ
+* -------------------------- */
+.memo{
+    background-color: #f7f7f7;
+    border: transparent;
+    padding-left: 18px;
+    padding-top: 16px;
+/*    letter-spacing: 3px;*/
+}
+
+/* ----------------------------
+* 規約
+* -------------------------- */
+.wrap_privacy_policy{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+}
+
+@media (min-width:768px) {
+    .wrap_privacy_policy{
+        margin-left: -65px;
+    }
+}
+.wrap_privacy_policy input{
+    /*    margin-right: 15px;*/
+}
+.confirm .wrap_privacy_policy{
+    display: none;
+}
+/*入力 sp 規約*/
+@media (max-width:768px) {
+    .wrap_privacy_policy{
+        font-size: inherit;
+        margin-bottom: 20px;
+    }
+    .input .wrap_privacy_policy{
+/*        text-align: left;*/
+    }
+    .input .mwform-checkbox-field label{
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+/*規約 エラー位置*/
+.input .wrap_privacy_policy{
+    position: relative;
+}
+.mw_wp_form .wrap_privacy_policy .error{
+    position: absolute;
+    top: 30px;
+    float: none;
+    display: inline;
+}
+@media (max-width:768px) {
+    .mw_wp_form .wrap_privacy_policy .error{
+        position: absolute;
+        top: 25px;
+        float: none;
+        display: inline;
+    }
+}
+
+.wrap_privacy_policy a:hover{
+    text-decoration: underline;
+}
+input#kiyaku-1{
+    display: none;
+}
+.mwform-checkbox-field label{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: #3e4956;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
+}
+.mwform-checkbox-field label:before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border: 2px solid #dedfe0;
+    background-color: #fff;
+}
+.mwform-checkbox-field input[type="checkbox"]:checked + span:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 22px;
+    width: 16px;
+    height: 11px;
+    margin-top: -5px;
+    background: url(/wordpress/wp-content/themes/museum/common/img/form/check.png) left bottom; 
+}
+@media (max-width:768px) {
+    .mwform-checkbox-field input[type="checkbox"]:checked + span:after {
+        left: 2px;
+    }
+}
+/*エラー表記位置*/
+.mw_wp_form .number_person + .error {
+    display: inline !important;
+}
+.mw_wp_form .error {
+    float: left;
+    margin-top: 5px;
+}
+@media (max-width:768px) {
+    .mw_wp_form .error {
+        float: none;
+        margin-top: 5px;
+    }
+}
+/*bootstrap解除*/
+.table-bordered {
+    border: inherit;
+}

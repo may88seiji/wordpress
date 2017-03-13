@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* ----------------------------
+* header group
+* -------------------------- */
+.group_bg {
+    background-image: url(/wordpress/wp-content/themes/museum/common/img/header/group_bg.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -30px;
+    height: 675px;
+    position: relative;
+}
+@media (max-width:768px) {
+    .group_bg {
+        background-image: url(/wordpress/wp-content/themes/museum/common/img/header/group_bg_sp.png);
+        height: 230px;
+    }
+}
+/*main*/
+main {
+    margin: 54px auto 70px;
+}
+@media (min-width:768px) {
+    .mb_p{
+        margin-bottom: 32px;
+    }
+}
+@media (max-width:768px) {
+    main {
+        margin: 20px auto 40px;
+    }
+}
+
+/* h2 */
+h2{
+    margin-bottom: 15px;
+}
+
+/*group_text*/
+.group_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group_text>div{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 42px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    width: 643px;
+    padding: 0;
+}
+@media (max-width:768px) {
+    .group_text>div{
+        letter-spacing: 0px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        padding: 0;
+/*        width: 84.375%;*/
+    }
+}
+/*table*/
+
+@media (min-width:768px) {
+    .table-bordered > tbody > tr > td{
+        width: 710px;
+        vertical-align: middle;
+        padding: 20px 17px;
+    }
+    .table-bordered > tbody > tr > th{
+        vertical-align: middle;
+        width: 250px;
+        height: 96px;
+        padding: 20px 17px;
+    }
+}
+
+@media (max-width:768px) {
+    .table {
+        margin-top: 0px;
+        margin-bottom: 35px;
+    }
+    .table-bordered > tbody > tr > td,.table-bordered > tbody > tr > th{
+        font-size: 1.1rem;
+        padding: 8px;
+        letter-spacing: 0;
+    }
+}
+
+
+/* 団体・学校でご来館の方へ*/
+.h1_title{
+    letter-spacing: 5px;
+    line-height: 7rem;
+    top: 283px;
+}
+@media (max-width:768px) {
+    .h1_title{
+        top: 94px;
+        position: relative;
+    }
+    .h1_title img {
+        width: 151.5px;
+        margin: 0 auto;
+    }
+}
+@media (min-width:768px) {
+    .h2_title{
+        margin-bottom: 0;
+    }
+}
+.link_form:hover{
+    text-decoration: underline;
+}
+/*入館料 テキスト画像サイズ*/
+@media (max-width:768px) {
+    .fee img {
+        width: 58.5px; 
+    }
+}
+/*申込み テキスト画像サイズ*/
+@media (max-width:768px) {
+    .img_submit img {
+        width: 134px; 
+    }
+}
+/*お願い テキスト画像サイズ*/
+@media (max-width:768px) {
+    .favor img{
+        width: 217px;
+    }
+}
+/*見学申込みフォーム リンク*/
+.link_form{
+    border-bottom: 1px solid #337ab7;
+    padding-bottom: 2px;
+}
+.link_form:hover{
+    text-decoration: none;
+}
+/*table お申し込みについて*/
+.submit .table{
+    margin-bottom: 10px;
+}
+
+/*cancel*/
+.cancel{
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 90px;
+    letter-spacing: 1px;
+}
+@media (max-width:768px) {
+    .cancel{
+        margin: 0 auto 35px;
+/*        width:84.375%;*/
+        font-size: 1rem;
+    }
+}
+/*table 印伝博物館からのお願い*/
+.table.table_favor tr:last-child td{
+    line-height: 2;
+}

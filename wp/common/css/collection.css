@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* ----------------------------
+* item_box
+* -------------------------- */
+main .main_container .item_box {
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+main .item_box>div:nth-child(4n) {
+    margin-right: 0;
+}
+/* ----------------------------
+* 展示情報
+* -------------------------- */
+#collection .paper_bg img{
+/*    width: 200px;*/
+}
+@media (max-width:768px) {
+    #collection .paper_bg img{
+        width: 100px;
+    }
+}
+/* ----------------------------
+* 印傳について
+* -------------------------- */
+#about .paper_bg img{
+/*    width: 250px;*/
+}
+@media (max-width:768px) {
+    #about .paper_bg img{
+        width: 143.5px;
+    }
+}
+/* ----------------------------
+* お知らせ
+* -------------------------- */
+#news .paper_bg img{
+/*    width: 160px;*/
+}
+@media (max-width:768px) {
+    #news .paper_bg img{
+        width: 92.5px;
+    }
+}

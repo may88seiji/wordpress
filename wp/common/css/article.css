@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* ----------------------------
+* h caption
+* -------------------------- */
+h1,h2,h3,h4,h5,.caption{
+    color: #4c5d46;
+    font-weight: bold;
+}
+h1{
+    font-size: 2.2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+.col-xs-12{
+    padding: 0;
+}
+
+/* ----------------------------
+* #article text
+
+**ul
+**ol
+**
+* -------------------------- */
+#article .text p{
+    margin-bottom: 30px;
+    word-break: break-all;
+}
+.text ul li{
+    list-style:  square;
+    margin-left: -20px;
+}
+.tag ul {
+    margin-bottom: 0;
+}
+
+ol{
+    margin-left: -10px;
+    list-style: decimal-leading-zero;
+    font-weight: bold;
+}
+ol li{
+    margin-bottom: 0;
+    font-weight: normal;
+}
+blockquote{
+    padding: 30px 55px;
+    background-color: #fff;
+    border: #fff;
+    position: relative;
+}
+blockquote::before{
+    content: url(/wordpress/wp-content/themes/museum/common/img/common/quote.png);
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+#article .text blockquote p{
+    margin-bottom: 0;
+}
+
+p img{
+    width: 100%;
+    height: auto;
+}

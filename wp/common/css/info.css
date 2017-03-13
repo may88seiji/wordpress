@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+/* ----------------------------
+* header info
+* -------------------------- */
+.info_bg {
+    background-image: url(/wordpress/wp-content/themes/museum/common/img/header/info_bg.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -30px;
+    height: 675px;
+    position: relative;
+}
+@media (max-width:768px) {
+    .info_bg {
+        background-image: url(/wordpress/wp-content/themes/museum/common/img/header/info_bg_sp.png);
+        background-size: cover;
+        height: 230px;
+    }
+}
+@media (max-width:768px) {
+    .h1_title {
+        position: relative;
+    }
+    .h1_title img {
+        margin: auto;
+        width: 148px;
+        text-align: center;
+        position: relative;
+    }
+}
+
+/* ----------------------------
+* main
+* -------------------------- */
+@media (max-width: 768px){
+    main {
+        margin: 20px auto 77px;
+    }
+}
+
+.open_time{
+    letter-spacing: 10px;
+}
+@media (max-width:768px) {
+    .open_time{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .table-bordered > tbody > tr > th{
+        width: 24%;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 768px){
+    .h2_title.open_time img {
+        width: 81px;
+    }
+    
+    .h2_title.floor_map img {
+        width: 104.5px;
+    }
+    
+/*
+    .table {
+        width: 100%;
+        max-width: 100%;
+        margin: 0px auto 20px;
+    }
+*/
+    /* table*/
+    .table{
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+    .table-bordered > tbody > tr > th{
+        border: 1px solid #7e6d57;
+        padding: 10px 14px;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        width: 30.37037037037%;
+    }
+    .table-bordered > tbody > tr > td{
+        background-color: transparent;
+        font-size: 1.1rem;
+    }
+    .content_img {
+        margin-top: 10px;
+        position: relative;
+    }
+}
+/* ----------------------------
+* floor_map
+* -------------------------- */
+.floor_map{
+    position: relative;
+}
+@media (min-width:768px) {
+    .floor_map{
+        margin-top: 10px;
+    }
+}
+.floor_text{
+    position: absolute;
+    font-size: 1.4rem;
+    text-align: left;
+    z-index: 10;
+    font-weight: bold;
+    line-height: 1.4;
+    top: 674px;
+    letter-spacing: 1px;
+    left: 40px;
+}
+@media (max-width:768px) {
+    .floor_text{
+        top: 53%;
+        width: 85.185185185185%;
+        font-size: 3vw;
+        left: 8%;
+    }
+    .floor_text span{
+        margin-top: 10px;
+    }
+}
